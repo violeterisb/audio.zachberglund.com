@@ -1,0 +1,95 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#___gatsby{
+    height: 100%;
+}
+#gatsby-focus-wrapper{
+    height: 100%;
+}
+body{
+    font-weight: 200;
+   // @include font(normal, 200);
+    color: $white;
+    background-color: $black;
+    #Main-Content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        p:before,p:after{
+            display: block;
+            content: "";
+            width: 2px;
+            height: 1px;
+            background-color:white;
+            position: absolute;    
+            left: 0;
+        }
+        .btn{
+            p:before, p:after{
+                display: none;
+            }
+        }
+        .no-dots{
+            &:before{
+              content: initial;
+            }
+            &:after{
+              content: initial;
+            }
+          }
+        main{
+            flex: 1 0 auto;
+            margin-top: 80px;
+        }
+        footer{
+            margin-top: 20px;
+            flex-shrink: 0;
+            padding: 10px;
+            border: solid;
+            border-width: 1px 0 0 0;
+            border-color: $light-border;
+            margin-right: 15px;
+            margin-left: 15px;
+            @media (min-width: $screen-md) {
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+}
+p{
+    //@include font(normal, 200);
+    font-weight: 200;
+    color: $white;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+a{
+    color: $blue;
+    text-decoration: none;
+    &:hover, &:focus{
+        color: $white;
+    }
+    &:focus{
+        outline-color: $blue;
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+h1:before,h1:after,h2:before,h2:after,h3:before,h3:after,h4:before,h4:after,h5:before,h5:after,h6:before,h6:after{
+    display: block;
+    content: "";
+    width: 2px;
+    height: 1px;
+    background-color:white;
+    position: absolute;    
+    left: 0;
+}
