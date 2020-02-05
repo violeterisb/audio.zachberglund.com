@@ -46,8 +46,17 @@ const IndexPage = props => (
           Cum Laude in Music Composition from the University of Northern Colorado 
           to working in web development I have a diverse background that I channel into game making.</p>
       <p>Currently, I am working on the next title for Morning Person Games while refining my skills and 
-        scouting out the next opportunity!
+        scouting out the next opportunity! You can can find some of my previous work below:
       </p>
+      <p></p>
+      <div className="two-column">
+        <Link  className="corners btn column text-center" to="/games">
+            <span className="link-text"><p>Games</p></span><span className="top-dots"/>
+        </Link>
+        <Link  className="corners btn column text-center" to="/games">
+            <span className="link-text"><p>Audio</p></span><span className="top-dots"/>
+        </Link>
+      </div>
   </Layout>
 )
 
