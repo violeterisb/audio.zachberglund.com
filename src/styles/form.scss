@@ -1,0 +1,40 @@
+form{
+  button.btn{
+    padding: 5px 15px;
+    color: $blue;
+    border: none;
+    .link-text{
+      font-size: 18px;
+    }
+  }
+  .input{
+    label{
+      width: 100%;
+    }
+    input{
+      width: 100%;
+      border:  none;  
+    }
+    textarea{
+      width: 100%;
+      max-width: 100%;
+      border: none;
+    }
+  }
+  .message{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .name-and-email{
+    display: flex;
+    .input{
+      width: 50%;
+    }
+    .name{
+      margin-right: 10px;
+    }
+    .email{
+      margin-left: 10px;
+    }
+  }
+}
