@@ -67,6 +67,12 @@ const Games = props => (
       The only thing worse than having weapon durability is being the person that has
        to fix the weapon durability.</p>
     <p>I helped design, develop, and implement the audio for Non-Player Crafter during Global Gam Jam 2020.</p>
+    <div className="center-buttons">
+      <a className="corners btn" href="https://treecki.itch.io/non-player-crafter" target="_blank"
+        rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'itch-io']} />
+            <span className="link-text"></span><span className="top-dots"/>
+        </a>
+    </div>
   </Layout>
 )
 export default Games

@@ -142,7 +142,10 @@ $screen-xl: 1200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 55%;
+  width: 92%;
+  @media (min-width: $screen-sm) {
+    width: 55%;
+  } 
   white-space: nowrap;
   margin-right: auto;
   margin-left: auto;
@@ -174,14 +177,27 @@ $screen-xl: 1200px;
     width: 100%;
     z-index: 1;
     background-color: alphablack(.65);
-    box-shadow: 0 8px 4px 5px alphablack(.65);
+    box-shadow: 0 0 4px 5px alphablack(.65);
+    @media (min-width: $screen-sm) {
+      box-shadow: 0 8px 4px 5px alphablack(.65);
+    }
     h1{
       margin-top: 10px;
+      margin-bottom: 5px;
       padding-left: 0;
     }
     h4{
       margin-bottom: 10px;
       padding-left: 0;
+    }
+    @media (max-width: $screen-sm) {
+      h1{
+        font-size: 1.6rem;
+        margin-top: 5px;
+      }
+      h4{
+        font-size: 0.8rem;
+      }
     }
   }
   .footer-in-image{
@@ -233,10 +249,12 @@ $screen-xl: 1200px;
   .top-dots:before{
     top: 0;
     left: 0;
+    z-index: 1;
   }
   .top-dots:after {
     top: 0;
     right: 0;
+    z-index: 1;
   }
 }
 
@@ -284,6 +302,7 @@ a.image-container{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 2px;
   .column{
     width: 50%;
     margin: 0 10px;

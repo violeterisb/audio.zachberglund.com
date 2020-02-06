@@ -93,6 +93,9 @@ header{
                     p{
                         color: $white;
                         display: inline;
+                        @media (max-width: 380px) {
+                            display: none;
+                        }
                     }
                 }
             }

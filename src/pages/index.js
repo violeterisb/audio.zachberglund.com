@@ -10,7 +10,7 @@ const IndexPage = props => (
     <SEO title="Zach Berglund - Home" />
       <div className="image-container">
         <div className="header-in-image">
-          <h1 className="text-center no-dots" style={{marginBottom: "10px"}}>Zach Berglund</h1>
+          <h1 className="text-center no-dots">Zach Berglund</h1>
           <h4 className="text-center title-dots">Game Designer / Sound Designer</h4>
         </div>
         <Img fluid={props.data.imageOne.childImageSharp.fluid} /><span className="top-dots" />
@@ -53,7 +53,7 @@ const IndexPage = props => (
         <Link  className="corners btn column text-center" to="/games">
             <span className="link-text"><p>Games</p></span><span className="top-dots"/>
         </Link>
-        <Link  className="corners btn column text-center" to="/games">
+          <Link  className="corners btn column text-center" to="/games">
             <span className="link-text"><p>Audio</p></span><span className="top-dots"/>
         </Link>
       </div>
