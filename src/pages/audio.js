@@ -8,7 +8,7 @@ const Audio = () => (
     <SEO title="Zach Berglund - Audio" />
     <h2 className="text-center no-dots" >Sound Design Reel</h2>
     <Video
-        videoSrcURL="https://www.youtube.com/embed/DH4F8gRTgLk"
+        videoSrcURL="https://www.youtube.com/embed/8mnpxkts4Zc"
         videoTitle="Zach Berglund Sound Design Reel"
         classes="video"
     />
