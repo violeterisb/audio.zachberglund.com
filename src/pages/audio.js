@@ -13,7 +13,7 @@ const Audio = () => (
       classes="video"
     />
     <p>
-      I'm available to create great audio for your game, as well as solve your
+      I'm available to bring your game to life with audio, as well as solve your
       more techinical audio problems in implementation and development.
     </p>
   </Layout>
