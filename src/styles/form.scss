@@ -1,39 +1,39 @@
-form{
-  button.btn{
+form {
+  button.btn {
     padding: 5px 15px;
     color: $blue;
     border: none;
-    .link-text{
+    .link-text {
       font-size: 18px;
     }
   }
-  .input{
-    label{
+  .input {
+    label {
       width: 100%;
     }
-    input{
+    input {
       width: 100%;
-      border:  none;  
+      border: none;
     }
-    textarea{
+    textarea {
       width: 100%;
       max-width: 100%;
       border: none;
     }
   }
-  .message{
+  .message {
     display: flex;
     flex-wrap: wrap;
   }
-  .name-and-email{
+  .name-and-email {
     display: flex;
-    .input{
+    .input {
       width: 50%;
     }
-    .name{
+    .name {
       margin-right: 10px;
     }
-    .email{
+    .email {
       margin-left: 10px;
     }
   }

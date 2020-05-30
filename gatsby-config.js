@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Zach Berglund's Website`,
-    description: `Nice to meet you!`,
+    description: `Zach Berglund – sound design, audio implementation, music composition, foley & recording, game design, and unity development`,
     author: `@zachberglund`,
   },
   plugins: [
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `zachberglund.com`,
+        short_name: `zb`,
         start_url: `/`,
         background_color: `#10161c`,
         theme_color: `#3282ff`,

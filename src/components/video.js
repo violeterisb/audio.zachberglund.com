@@ -1,6 +1,6 @@
 import React from "react"
-const Video = ({classes, videoSrcURL, videoTitle, ...props }) => (
-  <div className={classes}>
+const Video = ({ classes, styles, videoSrcURL, videoTitle, ...props }) => (
+  <div className={classes} style={styles}>
     <iframe
       src={videoSrcURL}
       title={videoTitle}
