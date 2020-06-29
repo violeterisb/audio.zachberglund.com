@@ -2,7 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Zach Berglund's Website`,
     description: `Zach Berglund – sound design, audio implementation, music composition, foley & recording, game design, and unity development`,
-    author: `@zachberglund`,
+    author: `Zach Berglund`,
+    social: {
+      twitter: `zachberglund`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
