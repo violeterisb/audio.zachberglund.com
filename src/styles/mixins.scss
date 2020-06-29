@@ -6,6 +6,7 @@ $btn-blue: rgb(40, 105, 255);
 $white: rgb(235, 235, 235);
 $true_white: white;
 $light-border: rgba(240, 245, 255, 0.3);
+$red: red;
 
 $screen-sm: 576px;
 $screen-md: 768px;
@@ -85,6 +86,10 @@ $screen-xl: 1200px;
     bottom: -1px;
     right: -2px;
   }
+}
+
+.warning {
+  color: $red;
 }
 
 .btn {
@@ -476,4 +481,94 @@ a.image-container {
   stroke: #ffffff;
   stroke-width: 22;
   stroke-miterlimit: 10;
+}
+
+.background-image-button {
+  display: none;
+  @media (min-width: $screen-md) {
+    display: flex;
+  }
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 415px;
+  background-image: url(../images/soundboard.png);
+  background-position: center;
+  background-size: 734px 413px;
+  background-repeat: no-repeat;
+  border: none;
+  button {
+    .link-text::before {
+      bottom: 0;
+      left: 0;
+    }
+    .link-text::after {
+      bottom: 0;
+      right: 0;
+    }
+    .btn::before {
+      top: 2px;
+      left: 2px;
+      right: 2px;
+      bottom: 2px;
+    }
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    &:hover,
+    &:focus,
+    &.active {
+      div.btn {
+        color: white;
+        p {
+          color: $white;
+        }
+        &:before {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
+
+.itchio-embed {
+  display: none;
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+}
+.itchio-embed.image-container {
+  &:before {
+    bottom: 63px;
+  }
+  &:after {
+    bottom: 63px;
+  }
+  .top-dots:before {
+    top: 9px;
+  }
+  .top-dots:after {
+    top: 9px;
+  }
+}
+.block-itchio-fullscreen {
+  display: block;
+  background-color: #10161c;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 11px;
+  bottom: 40px;
+}
+
+.display-none {
+  display: none;
 }
