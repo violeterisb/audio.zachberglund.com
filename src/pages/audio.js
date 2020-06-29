@@ -42,11 +42,21 @@ export default class Audio extends React.Component {
           <Link to="/games"> game I made</Link> that lets you easily control
           some of the parameters that affected the audio.
         </p>
-        <p className="warning">
-          This is undergoing maintanace as it does not currently work in Chrome
-          or Safari.
-        </p>
         {content}
+        <h2>Tips</h2>
+        <p>
+          Mixing together FMOD parameters and WebGL can be a little bit finicky.
+          Here's some tips if you're running into issues:
+        </p>
+        <ul>
+          <li>Refresh the page (sometimes this entirely fixes it).</li>
+          <li>
+            Try another browser (<b>Firefox</b> has been the most consistent.
+            <b> Safari </b>
+            has a known and currently unsolvable issue.).
+          </li>
+          <li>Double check your browser audio settings.</li>
+        </ul>
       </Layout>
     )
   }
