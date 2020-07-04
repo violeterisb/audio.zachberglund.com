@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Video from "../components/video"
 import { Link } from "gatsby"
+import { isMobile } from "react-device-detect"
 
 export default class Audio extends React.Component {
   constructor() {
@@ -23,6 +24,43 @@ export default class Audio extends React.Component {
     } else {
       content = <ItchioEmbed />
     }
+    let header
+    let tips
+    if (isMobile) {
+      header = (
+        <p>
+          If you visit this page on a desktop browser, you can try out an audio
+          implementation demo of a <Link to="/games"> game I made</Link>
+        </p>
+      )
+      tips = ""
+    } else {
+      header = (
+        <p>
+          Here is a little audio demo of the
+          <Link to="/games"> game I made</Link> that lets you easily control
+          some of the parameters that affected the audio.
+        </p>
+      )
+      tips = (
+        <div>
+          <h2>Tips</h2>
+          <p>
+            Mixing together FMOD parameters and WebGL can be a little bit
+            finicky. Here's some tips if you're running into issues:
+          </p>
+          <ul>
+            <li>Refresh the page (sometimes this entirely fixes it).</li>
+            <li>
+              Try another browser (<b>Firefox</b> has been the most consistent.
+              <b> Safari </b>
+              has a known and currently unsolvable issue.).
+            </li>
+            <li>Double check your browser audio settings.</li>
+          </ul>
+        </div>
+      )
+    }
     return (
       <Layout>
         <SEO title="Zach Berglund - Game Audio – Sound Design, Music, Audio Implementation, Wwise, FMOD" />
@@ -37,26 +75,9 @@ export default class Audio extends React.Component {
           your more techinical audio problems in implementation and development.
         </p>
         <h2 className="text-center no-dots">Audio Implementaion</h2>
-        <p>
-          Here is a little audio demo of the
-          <Link to="/games"> game I made</Link> that lets you easily control
-          some of the parameters that affected the audio.
-        </p>
+        {header}
         {content}
-        <h2>Tips</h2>
-        <p>
-          Mixing together FMOD parameters and WebGL can be a little bit finicky.
-          Here's some tips if you're running into issues:
-        </p>
-        <ul>
-          <li>Refresh the page (sometimes this entirely fixes it).</li>
-          <li>
-            Try another browser (<b>Firefox</b> has been the most consistent.
-            <b> Safari </b>
-            has a known and currently unsolvable issue.).
-          </li>
-          <li>Double check your browser audio settings.</li>
-        </ul>
+        {tips}
       </Layout>
     )
   }
