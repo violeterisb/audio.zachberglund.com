@@ -204,7 +204,28 @@ export default Games
 
 export const pageQuery = graphql`
   query {
-    gem: file(relativePath: { eq: "MPG_logo_lens_flare.png" }) {
+    gem: file(relativePath: { eq: "non-gem.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 768) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    title: file(relativePath: { eq: "non-title.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 768) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    shop: file(relativePath: { eq: "non-shop.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 768) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    sword: file(relativePath: { eq: "non-sword.png" }) {
       childImageSharp {
         fluid(maxWidth: 768) {
           ...GatsbyImageSharpFluid
