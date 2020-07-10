@@ -39,7 +39,7 @@ export default class Audio extends React.Component {
         <p>
           Here is a little audio demo of the
           <Link to="/games"> game I made</Link> that lets you easily control
-          some of the parameters that affected the audio.
+          some of the parameters that affected audio.
         </p>
       )
       tips = (
@@ -52,11 +52,12 @@ export default class Audio extends React.Component {
           <ul>
             <li>Refresh the page (sometimes this entirely fixes it).</li>
             <li>
-              Try another browser (<b>Firefox</b> has been the most consistent.
-              <b> Safari </b>
+              Try another browser (<b> Safari </b>
               has a known and currently unsolvable issue.).
             </li>
-            <li>Double check your browser audio settings.</li>
+            <li>
+              Double check that your browser audio settings allow autoplay.
+            </li>
           </ul>
         </div>
       )

@@ -184,12 +184,58 @@ const Games = props => (
     </p>
     <p>
       I helped design, develop, and implement the audio for Non-Player Crafter
-      during Global Gam Jam 2020.
+      for Global Game Jam 2020.
     </p>
     <div className="center-buttons">
       <a
         className="corners btn"
         href="https://treecki.itch.io/non-player-crafter"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={["fab", "itch-io"]} />
+        <span className="link-text"></span>
+        <span className="top-dots" />
+      </a>
+    </div>
+    <div className="line" />
+    <h2
+      id="NonPlayer"
+      className="text-center no-dots"
+      style={{ marginTop: "20px", marginBottom: "10px" }}
+    >
+      Sneaky Snacks
+    </h2>
+    <h4 className="text-center title-dots wide-title">Leaf Team</h4>
+    <div className="image-container">
+      <Img fluid={props.data.sneaky.childImageSharp.fluid} />
+      <span className="top-dots" />
+    </div>
+    <h5 className="no-dots" style={{ paddingLeft: "0", marginBottom: "10px" }}>
+      <ul
+        className="horizontal-list one-line-list"
+        style={{ marginBottom: "0" }}
+      >
+        <li>Unity</li>
+        <li>FMOD</li>
+        <li>Design</li>
+        <li>Development</li>
+        <li>Music</li>
+      </ul>
+    </h5>
+    <p>
+      A mischievous little dog's adventure to collect as many treats as
+      possible. Be the best good boy you can be by not getting caught, peeing
+      outside, and playing with your toy.
+    </p>
+    <p>
+      I helped design, develop, and write the music for Sneaky Snacks for the
+      Itchio Major Jam 2.
+    </p>
+    <div className="center-buttons">
+      <a
+        className="corners btn"
+        href="https://team-leaf.itch.io/sneaky-snacks"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -226,6 +272,13 @@ export const pageQuery = graphql`
       }
     }
     sword: file(relativePath: { eq: "non-sword.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 768) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    sneaky: file(relativePath: { eq: "sneaky-snacks.png" }) {
       childImageSharp {
         fluid(maxWidth: 768) {
           ...GatsbyImageSharpFluid
