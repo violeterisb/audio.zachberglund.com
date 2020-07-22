@@ -14,11 +14,15 @@ form {
     input {
       width: 100%;
       border: none;
+      background-color: lighten($black, 9%);
+      color: $white;
     }
     textarea {
       width: 100%;
       max-width: 100%;
       border: none;
+      background-color: lighten($black, 9%);
+      color: $white;
     }
   }
   .message {
