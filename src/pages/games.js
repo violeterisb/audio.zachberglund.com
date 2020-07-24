@@ -207,7 +207,7 @@ const Games = props => (
       Sneaky Snacks
     </h2>
     <h4 className="text-center title-dots wide-title">Leaf Team</h4>
-    <div className="image-container">
+    <div className="image-container" style={{ marginBottom: "10px" }}>
       <Img fluid={props.data.sneaky.childImageSharp.fluid} />
       <span className="top-dots" />
     </div>
