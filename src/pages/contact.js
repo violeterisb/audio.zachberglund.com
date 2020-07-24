@@ -4,8 +4,8 @@ import SEO from "../components/seo"
 
 const Contact = () => (
   <Layout>
-    <SEO title="Contact" />
-    <h2>Contact Me</h2>
+    <SEO title="Contact This Nerd" />
+    <h1>Contact Me</h1>
     <form
       name="contact"
       method="post"

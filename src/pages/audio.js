@@ -64,7 +64,7 @@ export default class Audio extends React.Component {
     }
     return (
       <Layout>
-        <SEO title="Zach Berglund - Game Audio – Sound Design, Music, Audio Implementation, Wwise, FMOD" />
+        <SEO title="Audio Created By This Nerd" />
         <h2 className="text-center no-dots">Sound Design Reel</h2>
         <Video
           videoSrcURL="https://www.youtube.com/embed/8mnpxkts4Zc"

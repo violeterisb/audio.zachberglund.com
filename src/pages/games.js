@@ -8,7 +8,7 @@ import Img from "gatsby-image"
 
 const Games = props => (
   <Layout>
-    <SEO title="Zach Berglund - Games – Game Design, Sound Design, Music, Audio Implementation, Unity Development, Open World Game: the Open World Game" />
+    <SEO title="Video Games Made With This Nerd" />
     <h2
       id="OWGTOWG"
       className="text-center no-dots"

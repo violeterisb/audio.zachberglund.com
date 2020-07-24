@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 
 const IndexPage = props => (
   <Layout>
-    <SEO title="Zach Berglund - Home" />
+    <SEO title="Who Is This Game and Sound Designer" />
     <div className="image-container">
       <div className="header-in-image">
         <h1 className="text-center no-dots">Zach Berglund</h1>

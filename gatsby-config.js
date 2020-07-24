@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Zach Berglund's Website`,
+    title: `Zach Berglund`,
     description: `Zach Berglund – sound design, audio implementation, technical sound design, music composition, foley & recording, game design, and unity development`,
     author: `Zach Berglund`,
     social: {
