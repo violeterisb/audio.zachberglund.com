@@ -442,10 +442,10 @@ a.image-container {
       padding-right: 5px;
       text-indent: -10px;
     }
-    &:nth-child(3n + 1)::before {
+    /*&:nth-child(3n + 1)::before {
       content: none;
       margin-right: 0;
-    }
+    }*/
   }
   &.one-line-list {
     li {
