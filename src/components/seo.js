@@ -28,14 +28,14 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const imageShare = site.siteMetadata.siteUrl +  defaultImage
+  const imageShare = site.siteMetadata.siteUrl + defaultImage
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={"Zach Berglund | " + title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
@@ -83,8 +83,7 @@ function SEO({ description, lang, meta, title }) {
           content: imageShare,
         },
       ].concat(meta)}
-    >
-    </Helmet>
+    ></Helmet>
   )
 }
 
